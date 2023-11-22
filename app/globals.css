@@ -217,3 +217,18 @@
 	@apply cursor-default select-none py-2 pl-10 pr-4;
 }
 /* END: search manufacturer styles */
+
+@keyframes slide-in {
+	0% {
+		transform: translateX(30%);
+		opacity: 0%;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 100%;
+	}
+}
+
+.slide-in {
+	animation: 0.9s ease-out 0s 1 slide-in;
+}
