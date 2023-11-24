@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className="relative">
+			<body className="relative bg-black text-white">
 				<Navbar />
 				{children}
 				<Footer />
