@@ -1,6 +1,6 @@
-const CustomFilter = () => {
+const CustomFilter = ({title}:any) => {
     return (
-        <div>CustomFilter</div>
+        <div>{title}</div>
     )
 }
 
