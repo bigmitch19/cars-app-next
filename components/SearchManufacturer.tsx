@@ -37,7 +37,7 @@ const SearchManufacturer = ({
 					<Combobox.Input
 						className="search-manufacturer__input"
 						placeholder="Volkswagen"
-						displayValue={(manufacturer) => manufacturer}
+						// displayValue={(manufacturer) => manufacturer}
 						onChange={(e) => setQuery(e.target.value)}
 					></Combobox.Input>
 
@@ -62,9 +62,14 @@ const SearchManufacturer = ({
 								<Combobox.Option
 									key={item}
 									className={({ active }) =>
-										`relative search-manufacturer__option`
+										`relative search-manufacturer__option ${
+											active ? 'bg-primary-blue text-white' : 'text-gray-900'
+										}`
 									}
-								></Combobox.Option>
+									value={item}
+								>
+									{item}
+								</Combobox.Option>
 							))
 						)}
 					</Combobox.Options>
