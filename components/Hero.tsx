@@ -1,36 +1,42 @@
 'use client';
+
 import Image from 'next/image';
-import { CustomButton } from '@/components';
+
+import { CustomButton } from '@components';
+import Link from 'next/link';
 
 const Hero = () => {
-	const handleScroll = () => {};
+	const handleScroll = () => {
+		const nextSection = document.getElementById('discover');
+
+		if (nextSection) {
+			nextSection.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
 
 	return (
 		<div className="hero">
 			<div className="flex-1 pt-36 padding-x">
 				<h1 className="hero__title">
-					Find, book or rent a car - quickly and easily
+					Find, book, rent a car—quick and super easy!
 				</h1>
 
 				<p className="hero__subtitle">
-					We are the best car rental company in the world, with over 1 million
-					satisfied customers.
+					Streamline your car rental experience with our effortless booking
+					process.
 				</p>
 
-				<CustomButton
-					title="Explore Cars"
-					containerStyles="bg-primary-blue mt-10 text-white rounded-full"
-					handleClick={handleScroll}
-				/>
+				<Link href="/explore-cars">
+					<CustomButton
+						title="Explore Cars"
+						containerStyles="bg-primary-blue text-white rounded-full mt-10"
+						handleClick={handleScroll}
+					/>
+				</Link>
 			</div>
 			<div className="hero__image-container">
 				<div className="hero__image">
-					<Image
-						fill
-						className="object-contain slide-in"
-						src="/hero.png"
-						alt="hero"
-					/>
+					<Image src="/hero.png" alt="hero" fill className="object-contain" />
 				</div>
 
 				<div className="hero__image-overlay" />
@@ -38,4 +44,5 @@ const Hero = () => {
 		</div>
 	);
 };
+
 export default Hero;
