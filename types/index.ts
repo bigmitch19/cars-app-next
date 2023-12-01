@@ -77,6 +77,8 @@ export interface Table {
 	id: string;
 	name: string;
 	columns: Column[];
+	createdAt: Date;
+	updatedAt: Date;
 }
 
 export interface Column {
