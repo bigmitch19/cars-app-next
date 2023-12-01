@@ -66,23 +66,3 @@ export interface SearchManuFacturerProps {
 	manufacturer: string;
 	setManuFacturer: (manufacturer: string) => void;
 }
-
-export interface Database {
-	id: string;
-	name: string;
-	tables: Table[];
-}
-
-export interface Table {
-	id: string;
-	name: string;
-	columns: Column[];
-	createdAt: Date;
-	updatedAt: Date;
-}
-
-export interface Column {
-	id: string;
-	name: string;
-	type: string;
-}
