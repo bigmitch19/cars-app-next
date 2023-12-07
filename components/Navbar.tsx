@@ -21,14 +21,14 @@ const NavBar = () => (
 					<CustomButton
 						title="Catalogue"
 						btnType="button"
-						containerStyles="text-white rounded-full bg-primary-blue min-w-[130px]"
+						containerStyles="text-white rounded-full bg-primary-blue "
 					/>
 				</Link>
 
 				<CustomButton
 					title="Sign in"
 					btnType="button"
-					containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]"
+					containerStyles="text-primary-blue rounded-full bg-white "
 				/>
 			</div>
 		</nav>
