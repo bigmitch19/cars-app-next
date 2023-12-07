@@ -38,10 +38,11 @@ const Hero = () => {
 				<div className="hero__image">
 					<div className="p-28 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-pink-500 via-red-500 to-yellow-500 h-[500px] w-[300px]  lg:h-[800px] lg:w-[600px] "></div>
 					<Image
-						src="./public/hero.webp"
+						src="./hero.webp"
 						alt="hero"
 						fill
 						className="object-contain"
+						placeholder="blur"
 					/>
 				</div>
 
