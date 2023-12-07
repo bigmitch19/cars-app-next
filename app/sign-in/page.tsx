@@ -11,7 +11,7 @@ export default function Home() {
 
 	return (
 		<>
-			<div className="relative sm:flex sm:flex-row justify-center bg-transparent rounded-3xl bg-gradient-to-t from-gray-900 via-purple-900 to-violet-600   ">
+			<div className="relative sm:flex sm:flex-row justify-center bg-transparent rounded-3xl h-screen bg-gradient-to-t from-gray-900 via-purple-900 to-violet-600   ">
 				<div className="flex-col flex self-center lg:px-14 sm:max-w-4xl xl:max-w-md z-10">
 					<div className="self-start hidden lg:flex flex-col text-gray-300">
 						<h1 className="my-3 font-semibold text-4xl">Welcome back</h1>
