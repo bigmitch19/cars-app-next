@@ -41,7 +41,7 @@ const Hero = () => {
 						src="/hero.webp"
 						alt="hero"
 						fill
-						className="object-contain scale-150"
+						className="object-contain scale-[2.3]"
 						placeholder="blur"
 					/>
 				</div>
