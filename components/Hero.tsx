@@ -16,7 +16,7 @@ const Hero = () => {
 
 	return (
 		<div className="hero">
-			<div className="flex-1 pt-36 padding-x">
+			<div className="flex-1 pt-36 padding-x overflow-hidden">
 				<h1 className="hero__title">
 					Discover, reserve, and drive your dream car - fast and effortlessly!
 				</h1>
