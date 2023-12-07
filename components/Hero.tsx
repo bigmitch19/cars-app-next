@@ -36,7 +36,7 @@ const Hero = () => {
 			</div>
 			<div className="hero__image-container">
 				<div className="hero__image">
-					<div className=" p-28 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-pink-500 via-red-500 to-yellow-500  lg:h-[1000px] lg:w-[600px] "></div>
+					<div className="p-28 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-pink-500 via-red-500 to-yellow-500 h-[500px] w-[300px]  lg:h-[1000px] lg:w-[600px] "></div>
 					<Image src="/hero.png" alt="hero" fill className="object-contain" />
 				</div>
 

@@ -12,11 +12,11 @@ const NavBar = () => (
 					alt="logo"
 					width={118}
 					height={18}
-					className="object-contain"
+					className="object-contain min-w-full"
 				/>
 			</Link>
 
-			<div className="flex gap-3">
+			<div className="flex gap-1 md:gap-3">
 				<Link href="/explore-cars">
 					<CustomButton
 						title="Catalogue"
