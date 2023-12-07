@@ -25,11 +25,13 @@ const NavBar = () => (
 					/>
 				</Link>
 
-				<CustomButton
-					title="Sign in"
-					btnType="button"
-					containerStyles="text-primary-blue rounded-full bg-white "
-				/>
+				<Link href="/sign-in">
+					<CustomButton
+						title="Sign in"
+						btnType="button"
+						containerStyles="text-primary-blue rounded-full bg-white "
+					/>
+				</Link>
 			</div>
 		</nav>
 	</header>
